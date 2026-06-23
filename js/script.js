@@ -209,23 +209,34 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (quoteForm) {
-    quoteForm.addEventListener('submit', (e) => {
+    quoteForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       if (!validateForm()) return;
 
-      // Simulate form submission (no backend)
       const submitBtn = quoteForm.querySelector('button[type="submit"]');
       submitBtn.textContent = 'Submitting...';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        quoteForm.style.display = 'none';
-        formSuccess.style.display = 'block';
-        quoteForm.reset();
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(quoteForm)
+        });
+        const data = await response.json();
+        if (data.success) {
+          quoteForm.style.display = 'none';
+          formSuccess.style.display = 'block';
+          quoteForm.reset();
+        } else {
+          alert('Submission failed. Please try again.');
+        }
+      } catch (err) {
+        alert('Network error. Please try again.');
+      } finally {
         submitBtn.textContent = 'Submit Request';
         submitBtn.disabled = false;
-      }, 1200);
+      }
     });
   }
 

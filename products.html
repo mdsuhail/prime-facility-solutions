@@ -135,34 +135,35 @@
         <span class="sec-lbl">Quick Enquiry</span>
         <h2 class="sec-h2">Request a Price List</h2>
         <p class="sec-sub">Tell us what you need and we will send a detailed quote within 24 hours.</p>
-        <form class="quick-enquiry-form" action="contact.html" method="get">
+        <form class="quick-enquiry-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="04cf1d97-06f6-4817-a4c1-566b6b0cb76c">
           <div class="form-2col">
             <div class="form-g">
               <label for="qeFirst">First Name</label>
-              <input id="qeFirst" type="text" placeholder="Rahul">
+              <input id="qeFirst" type="text" name="first_name" placeholder="Rahul">
             </div>
             <div class="form-g">
               <label for="qeLast">Last Name</label>
-              <input id="qeLast" type="text" placeholder="Sharma">
+              <input id="qeLast" type="text" name="last_name" placeholder="Sharma">
             </div>
           </div>
           <div class="form-2col">
             <div class="form-g">
               <label for="qeEmail">Email</label>
-              <input id="qeEmail" type="email" placeholder="rahul@company.com">
+              <input id="qeEmail" type="email" name="email" placeholder="rahul@company.com">
             </div>
             <div class="form-g">
               <label for="qePhone">Phone</label>
-              <input id="qePhone" type="tel" placeholder="+91 98765 43210">
+              <input id="qePhone" type="tel" name="phone" placeholder="+91 98765 43210">
             </div>
           </div>
           <div class="form-g">
             <label for="qeCompany">Company Name</label>
-            <input id="qeCompany" type="text" placeholder="Your Company Pvt. Ltd.">
+            <input id="qeCompany" type="text" name="company" placeholder="Your Company Pvt. Ltd.">
           </div>
           <div class="form-g">
             <label for="qeCategory">Category Needed</label>
-            <select id="qeCategory">
+            <select id="qeCategory" name="category">
               <option>Select a category</option>
               <option>Office Stationery</option>
               <option>Housekeeping Products</option>
@@ -175,7 +176,7 @@
           </div>
           <div class="form-g">
             <label for="qeMsg">Message / Requirements</label>
-            <textarea id="qeMsg" rows="4" placeholder="Tell us about your requirements — quantity, frequency, specific products..."></textarea>
+            <textarea id="qeMsg" name="message" rows="4" placeholder="Tell us about your requirements — quantity, frequency, specific products..."></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--sm btn-submit">Send Enquiry &rarr;</button>
         </form>
