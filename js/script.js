@@ -182,14 +182,14 @@ document.addEventListener('DOMContentLoaded', () => {
       valid = false;
     }
 
-    // Phone validation — 10-digit Indian mobile
-    const phoneVal = phone.value.trim().replace(/[\s\-\+]/g, '');
+    // Phone validation — digits only, max 15 chars
+    const phoneVal = phone.value.trim();
     if (!phoneVal) {
       document.getElementById('qPhoneError').textContent = 'Please enter your phone number.';
       phone.classList.add('error');
       valid = false;
-    } else if (!/^(\+?91)?[6-9]\d{9}$/.test(phoneVal)) {
-      document.getElementById('qPhoneError').textContent = 'Enter a valid 10-digit mobile number.';
+    } else if (!/^\d{7,15}$/.test(phoneVal)) {
+      document.getElementById('qPhoneError').textContent = 'Enter a valid phone number (digits only, up to 15).';
       phone.classList.add('error');
       valid = false;
     }
@@ -202,6 +202,15 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
       document.getElementById('qEmailError').textContent = 'Enter a valid email address.';
       email.classList.add('error');
+      valid = false;
+    }
+
+    // Message validation
+    const message = document.getElementById('qMessage');
+    if (message && !message.value.trim()) {
+      const msgError = document.getElementById('qMessageError');
+      if (msgError) msgError.textContent = 'Please enter your requirements.';
+      message.classList.add('error');
       valid = false;
     }
 
@@ -219,9 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
 
       try {
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const formData = Object.fromEntries(new FormData(quoteForm));
+        const response = await fetch('https://formsubmit.co/ajax/suhailsiddiqui1993@gmail.com', {
           method: 'POST',
-          body: new FormData(quoteForm)
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(formData)
         });
         const data = await response.json();
         if (data.success) {

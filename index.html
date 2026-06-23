@@ -521,10 +521,10 @@
       <h3 class="modal__title">Request a Free Quote</h3>
       <p class="modal__subtitle">Tell us what you need and we&rsquo;ll get back to you within 24 hours.</p>
       <form class="quote-form" id="quoteForm" novalidate>
-        <input type="hidden" name="access_key" value="04cf1d97-06f6-4817-a4c1-566b6b0cb76c">
+        <input type="hidden" name="_captcha" value="false"><input type="hidden" name="_subject" value="New Lead from Prime Facility Solutions!"><input type="hidden" name="_next" value="https://mdsuhail.github.io/prime-facility-solutions/">
         <div class="form-group">
           <label for="qName">Full Name *</label>
-          <input type="text" id="qName" name="name" placeholder="Your name" required>
+          <input type="text" id="qName" name="name" placeholder="Your name" required maxlength="100">
           <span class="form-error" id="qNameError"></span>
         </div>
         <div class="form-group">
@@ -533,7 +533,7 @@
         </div>
         <div class="form-group">
           <label for="qPhone">Phone Number *</label>
-          <input type="tel" id="qPhone" name="phone" placeholder="10-digit mobile number" required>
+          <input type="tel" id="qPhone" name="phone" placeholder="10-digit mobile number" required maxlength="15" pattern="[0-9]+">
           <span class="form-error" id="qPhoneError"></span>
         </div>
         <div class="form-group">
@@ -556,7 +556,7 @@
         </div>
         <div class="form-group">
           <label for="qMessage">Requirements</label>
-          <textarea id="qMessage" name="message" rows="4" placeholder="Describe what you need..."></textarea>
+          <textarea id="qMessage" name="message" rows="4" placeholder="Describe what you need..." required></textarea><span class="form-error" id="qMessageError"></span>
         </div>
         <button type="submit" class="btn btn--primary btn--lg btn--full">Submit Request</button>
       </form>
