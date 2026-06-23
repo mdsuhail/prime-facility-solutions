@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = document.getElementById('modalClose');
   const quoteForm = document.getElementById('quoteForm');
   const formSuccess = document.getElementById('formSuccess');
+  const contactForm = document.querySelector('form[action="https://formsubmit.co/suhailsiddiqui1993@gmail.com"]:not(.quick-enquiry-form)');
+  const quickEnquiryForm = document.querySelector('.quick-enquiry-form');
   const faqItems = document.querySelectorAll('.faq-item');
   const statNumbers = document.querySelectorAll('.stat-item__number');
 
@@ -217,6 +219,78 @@ document.addEventListener('DOMContentLoaded', () => {
     return valid;
   }
 
+  function getAjaxEndpoint(form) {
+    const action = form.getAttribute('action');
+
+    if (action && action.startsWith('https://formsubmit.co/')) {
+      return action.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
+    }
+
+    return 'https://formsubmit.co/ajax/suhailsiddiqui1993@gmail.com';
+  }
+
+  function getInlineSuccessBox(form) {
+    let successBox = form.nextElementSibling;
+
+    if (!successBox || !successBox.classList.contains('form-submit-success')) {
+      successBox = document.createElement('div');
+      successBox.className = 'form-submit-success';
+      successBox.style.display = 'none';
+      successBox.innerHTML = `
+        <span class="form-submit-success__icon">✅</span>
+        <h4>Thank You!</h4>
+        <p>Your request has been received. We'll contact you within 24 hours.</p>
+      `;
+      form.insertAdjacentElement('afterend', successBox);
+    }
+
+    return successBox;
+  }
+
+  async function submitFormAjax(form) {
+    const formData = Object.fromEntries(new FormData(form));
+    const response = await fetch(getAjaxEndpoint(form), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    return response.json();
+  }
+
+  function wireInlineAjaxForm(form, submitLabel) {
+    if (!form) return;
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (!submitBtn) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+
+      try {
+        const data = await submitFormAjax(form);
+        if (data.success) {
+          const successBox = getInlineSuccessBox(form);
+          form.style.display = 'none';
+          successBox.style.display = 'block';
+          form.reset();
+        } else {
+          alert('Submission failed. Please try again.');
+        }
+      } catch (err) {
+        alert('Network error. Please try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = submitLabel;
+      }
+    });
+  }
+
   if (quoteForm) {
     quoteForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -228,13 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
 
       try {
-        const formData = Object.fromEntries(new FormData(quoteForm));
-        const response = await fetch('https://formsubmit.co/ajax/suhailsiddiqui1993@gmail.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(formData)
-        });
-        const data = await response.json();
+        const data = await submitFormAjax(quoteForm);
         if (data.success) {
           quoteForm.style.display = 'none';
           formSuccess.style.display = 'block';
@@ -250,6 +318,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  wireInlineAjaxForm(contactForm, 'Send Enquiry →');
+  wireInlineAjaxForm(quickEnquiryForm, 'Send Enquiry →');
 
   // ================================================================
   // FAQ ACCORDION

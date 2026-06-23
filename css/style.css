@@ -2265,6 +2265,34 @@ input, select, textarea { font-family: inherit; font-size: var(--fs-base); }
   font-weight: var(--fw-semibold);
 }
 
+.form-submit-success {
+  text-align: center;
+  padding: 24px 20px;
+  margin-top: 18px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(8, 145, 178, 0.08), rgba(8, 145, 178, 0.03));
+  border: 1px solid rgba(8, 145, 178, 0.16);
+}
+
+.form-submit-success__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.form-submit-success h4 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
+  margin-bottom: 8px;
+}
+
+.form-submit-success p {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-light);
+  margin-bottom: 0;
+}
+
 /* ================================================================
    SCROLL ANIMATIONS
    ================================================================ */
