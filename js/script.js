@@ -247,7 +247,27 @@ document.addEventListener('DOMContentLoaded', () => {
     return successBox;
   }
 
+  function updateFormSubject(form) {
+    const subjectField = form.querySelector('input[name="_subject"]');
+    if (!subjectField) return;
+
+    const firstNameField = form.querySelector('input[name="first_name"]');
+    const fullNameField = form.querySelector('input[name="name"]');
+    const phoneField = form.querySelector('input[name="phone"]');
+    const companyField = form.querySelector('input[name="company"]');
+
+    const firstName = firstNameField?.value.trim()
+      || fullNameField?.value.trim().split(/\s+/)[0]
+      || 'Unknown';
+    const phone = phoneField?.value.trim() || 'NA';
+    const company = companyField?.value.trim() || 'NA';
+
+    subjectField.value = `Lead from PFS! ${firstName}-${phone}-${company}`;
+  }
+
   async function submitFormAjax(form) {
+    updateFormSubject(form);
+
     const formData = Object.fromEntries(new FormData(form));
     const response = await fetch(getAjaxEndpoint(form), {
       method: 'POST',
