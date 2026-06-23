@@ -1,0 +1,127 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Office stationery illustration">
+  <defs>
+    <linearGradient id="g-bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <linearGradient id="g-desk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a373" />
+      <stop offset="100%" stop-color="#b08968" />
+    </linearGradient>
+    <linearGradient id="g-nb1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="g-nb2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="g-nb3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+    <linearGradient id="g-holder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="g-file" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="g-ruler" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#facc15" />
+    </linearGradient>
+    <linearGradient id="g-stapler" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <filter id="f-shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.2" />
+    </filter>
+    <filter id="f-sm" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#0f172a" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <rect width="400" height="200" fill="url(#g-bg1)" />
+  <rect x="0" y="158" width="400" height="42" fill="url(#g-desk)" />
+  <rect x="0" y="158" width="400" height="3" fill="#b8936a" />
+
+  <g filter="url(#f-shadow)">
+    <rect x="50" y="72" width="80" height="88" rx="3" fill="url(#g-nb1)" />
+    <rect x="50" y="72" width="11" height="88" rx="2" fill="#0f2154" />
+    <circle cx="57" cy="84" r="2.5" fill="#94a3b8" />
+    <circle cx="57" cy="96" r="2.5" fill="#94a3b8" />
+    <circle cx="57" cy="108" r="2.5" fill="#94a3b8" />
+    <circle cx="57" cy="120" r="2.5" fill="#94a3b8" />
+    <circle cx="57" cy="132" r="2.5" fill="#94a3b8" />
+    <rect x="66" y="86" width="52" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="66" y="96" width="46" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="66" y="106" width="52" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="66" y="116" width="40" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="66" y="126" width="48" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="66" y="140" width="55" height="22" rx="2" fill="white" opacity="0.1" />
+    <text x="93" y="153" font-size="8" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">NOTEBOOK</text>
+  </g>
+
+  <g filter="url(#f-shadow)">
+    <rect x="136" y="82" width="70" height="78" rx="3" fill="url(#g-nb2)" />
+    <rect x="136" y="82" width="9" height="78" fill="#7f1d1d" />
+    <rect x="150" y="97" width="44" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="150" y="107" width="38" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="150" y="117" width="44" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="150" y="127" width="32" height="2" rx="1" fill="white" opacity="0.2" />
+    <text x="171" y="148" font-size="8" fill="white" text-anchor="middle" font-family="sans-serif" opacity="0.7">DIARY</text>
+  </g>
+
+  <g filter="url(#f-shadow)">
+    <rect x="213" y="86" width="65" height="74" rx="3" fill="url(#g-nb3)" />
+    <rect x="213" y="86" width="8" height="74" fill="#022c22" />
+    <rect x="226" y="100" width="44" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="226" y="110" width="38" height="2" rx="1" fill="white" opacity="0.2" />
+    <rect x="226" y="120" width="44" height="2" rx="1" fill="white" opacity="0.2" />
+    <text x="246" y="145" font-size="8" fill="white" text-anchor="middle" font-family="sans-serif" opacity="0.7">REGISTER</text>
+  </g>
+
+  <g filter="url(#f-sm)">
+    <rect x="44" y="138" width="38" height="22" rx="5" fill="url(#g-holder)" />
+    <rect x="44" y="138" width="38" height="7" rx="4" fill="#cbd5e1" />
+    <rect x="47" y="90" width="6" height="53" rx="3" fill="#1d4ed8" />
+    <rect x="55" y="86" width="6" height="57" rx="3" fill="#ef4444" />
+    <rect x="63" y="93" width="6" height="50" rx="3" fill="#10b981" />
+    <rect x="71" y="88" width="6" height="55" rx="3" fill="#ea580c" />
+  </g>
+
+  <g filter="url(#f-sm)">
+    <rect x="290" y="68" width="58" height="90" rx="3" fill="url(#g-file)" />
+    <rect x="294" y="63" width="58" height="90" rx="3" fill="#fde68a" />
+    <rect x="298" y="58" width="58" height="90" rx="3" fill="#fbbf24" />
+    <rect x="304" y="78" width="40" height="2" rx="1" fill="white" opacity="0.5" />
+    <rect x="304" y="88" width="34" height="2" rx="1" fill="white" opacity="0.5" />
+    <rect x="304" y="98" width="40" height="2" rx="1" fill="white" opacity="0.5" />
+  </g>
+
+  <g filter="url(#f-sm)">
+    <rect x="55" y="162" width="180" height="10" rx="3" fill="url(#g-ruler)" />
+    <rect x="55" y="162" width="180" height="3" rx="2" fill="#fef08a" />
+    <rect x="70" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+    <rect x="82" y="162" width="1.5" height="7" fill="#ca8a04" opacity="0.6" />
+    <rect x="94" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+    <rect x="106" y="162" width="1.5" height="7" fill="#ca8a04" opacity="0.6" />
+    <rect x="118" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+    <rect x="130" y="162" width="1.5" height="7" fill="#ca8a04" opacity="0.6" />
+    <rect x="142" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+    <rect x="154" y="162" width="1.5" height="7" fill="#ca8a04" opacity="0.6" />
+    <rect x="166" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+    <rect x="178" y="162" width="1.5" height="7" fill="#ca8a04" opacity="0.6" />
+    <rect x="190" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+    <rect x="202" y="162" width="1.5" height="7" fill="#ca8a04" opacity="0.6" />
+    <rect x="214" y="162" width="1" height="5" fill="#ca8a04" opacity="0.6" />
+  </g>
+
+  <g filter="url(#f-sm)">
+    <rect x="240" y="168" width="72" height="18" rx="6" fill="url(#g-stapler)" />
+    <rect x="244" y="168" width="64" height="10" rx="5" fill="#64748b" />
+  </g>
+</svg>

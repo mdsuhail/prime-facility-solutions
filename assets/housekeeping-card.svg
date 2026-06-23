@@ -1,0 +1,90 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Housekeeping supplies illustration">
+  <defs>
+    <linearGradient id="g-hkbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecfeff" />
+      <stop offset="100%" stop-color="#dbeafe" />
+    </linearGradient>
+    <linearGradient id="g-mop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="g-sp1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="g-sp2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="g-sp3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="g-bkt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="f-shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.2" />
+    </filter>
+    <filter id="f-sm" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <rect width="400" height="200" fill="url(#g-hkbg)" />
+  <rect x="0" y="170" width="400" height="30" fill="#e2e8f0" />
+  <rect x="0" y="170" width="400" height="2" fill="#94a3b8" />
+  <rect x="36" y="42" width="7" height="133" rx="3" fill="url(#g-mop)" />
+  <rect x="22" y="168" width="38" height="6" rx="3" fill="#94a3b8" />
+  <line x1="24" y1="174" x2="17" y2="192" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="30" y1="174" x2="24" y2="194" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="36" y1="174" x2="32" y2="195" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="42" y1="174" x2="41" y2="195" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="48" y1="174" x2="50" y2="194" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="54" y1="174" x2="58" y2="192" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round" />
+
+  <g filter="url(#f-shadow)">
+    <rect x="72" y="72" width="44" height="100" rx="9" fill="url(#g-sp1)" />
+    <rect x="72" y="72" width="44" height="20" rx="9" fill="#14532d" />
+    <rect x="78" y="100" width="32" height="40" rx="4" fill="#bbf7d0" opacity="0.2" />
+    <rect x="78" y="126" width="32" height="14" rx="3" fill="#4ade80" opacity="0.25" />
+    <path d="M116 80 L132 80 L136 92 L122 92 Z" fill="#14532d" />
+    <rect x="106" y="76" width="26" height="8" rx="4" fill="#166534" />
+    <rect x="80" y="112" width="28" height="20" rx="2" fill="white" opacity="0.1" />
+    <text x="94" y="122" font-size="7" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">DETTOL</text>
+    <text x="94" y="130" font-size="6" fill="#bbf7d0" text-anchor="middle" font-family="sans-serif">SURFACE</text>
+  </g>
+
+  <g filter="url(#f-shadow)">
+    <rect x="130" y="82" width="40" height="90" rx="9" fill="url(#g-sp2)" />
+    <rect x="130" y="82" width="40" height="18" rx="9" fill="#1e3a8a" />
+    <rect x="136" y="108" width="28" height="38" rx="4" fill="#bfdbfe" opacity="0.2" />
+    <path d="M170 89 L184 89 L188 100 L174 100 Z" fill="#1e3a8a" />
+    <rect x="160" y="85" width="22" height="8" rx="4" fill="#1e40af" />
+    <text x="150" y="128" font-size="7" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">COLIN</text>
+  </g>
+
+  <g filter="url(#f-shadow)">
+    <rect x="184" y="90" width="38" height="82" rx="9" fill="url(#g-sp3)" />
+    <rect x="184" y="90" width="38" height="17" rx="9" fill="#7f1d1d" />
+    <rect x="190" y="116" width="26" height="36" rx="4" fill="#fca5a5" opacity="0.18" />
+    <text x="203" y="138" font-size="7" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">LIZOL</text>
+  </g>
+
+  <g filter="url(#f-shadow)">
+    <path d="M242 122 L253 168 L293 168 L304 122 Z" fill="url(#g-bkt)" />
+    <ellipse cx="273" cy="122" rx="31" ry="8" fill="#38bdf8" />
+    <path d="M249 140 L253 168 L293 168 L297 140 Z" fill="#0ea5e9" opacity="0.3" />
+    <path d="M253 116 Q273 100 293 116" stroke="#bae6fd" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <g filter="url(#f-sm)">
+    <path d="M316 115 Q310 96 318 86 Q326 77 332 84 L336 106 L332 117 Z" fill="#fde68a" />
+    <path d="M332 84 Q340 75 347 81 L350 106 L344 117 L336 117 L332 106 Z" fill="#fde68a" />
+    <path d="M347 81 Q353 73 358 78 L360 106 L354 117 L350 117 L347 106 Z" fill="#fde68a" />
+    <rect x="310" y="113" width="56" height="11" rx="5" fill="#fbbf24" />
+  </g>
+
+  <ellipse cx="120" cy="175" rx="50" ry="4" fill="white" opacity="0.35" />
+</svg>
