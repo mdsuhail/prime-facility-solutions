@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Facility Supplies — Everything Your Office Needs</title>
-  <meta name="description" content="Delhi NCR's trusted office supply partner. 8000+ products, 15+ years of service, 350+ satisfied businesses. Stationery, Housekeeping, Pantry, Disposables, Toner & Cartridges, Corporate Gifts.">
+  <title>Prime Facility Supplies — Your Single-Source Office Supply Solution for Delhi NCR</title>
+  <meta name="description" content="Fast delivery, competitive pricing, personal service. Prime Facility Supplies is Delhi NCR's agile office supply partner. Office supplies, housekeeping, pantry, disposables, and corporate procurement support.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
   <!-- ====== HEADER / NAVIGATION ====== -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="index" class="logo">
+      <a href="/" class="logo">
         <span class="logo__icon">PFS</span>
         <span class="logo__text">
           <strong>Prime Facility Supplies</strong>
@@ -25,7 +25,7 @@
       </a>
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="index" class="nav__link active">Home</a></li>
+          <li><a href="/" class="nav__link active">Home</a></li>
           <li><a href="services" class="nav__link">Services</a></li>
           <li><a href="products" class="nav__link">Products</a></li>
           <li><a href="about" class="nav__link">About Us</a></li>
@@ -47,54 +47,79 @@
   <!-- ====== HERO SECTION ====== -->
   <section class="hero" id="hero">
     <div class="hero__bg-overlay"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
     <div class="container hero__inner">
-      <div class="hero__content">
+      <div class="hero__left">
         <div class="hero__badge">
           <span class="hero__badge-dot"></span>
-          15+ Years Trusted in Delhi NCR
+          Delhi NCR&rsquo;s Agile Office Supply Partner
         </div>
-        <h1 class="hero__title">Everything Your Office Needs &mdash; <span>One Trusted Partner.</span></h1>
+        <h1 class="hero__title">Everything Your <span class="hero__highlight">Workplace Needs</span> &mdash; Delivered Fast.</h1>
         <p class="hero__subtitle">
-          Stationery &middot; Housekeeping &middot; Pantry &middot; Disposables &middot; Toner &amp; Cartridges &middot; Corporate Gifts. 8000+ products, fast delivery, personal service &mdash; every time.
+          One vendor for stationery, housekeeping, pantry, disposables, cartridges &amp; corporate gifts. Same-day delivery, GST invoices, and a personal account manager &mdash; all at competitive prices.
         </p>
         <div class="hero__cta">
-          <button class="btn btn--light btn--lg" id="heroQuoteBtn">Request a Free Quote</button>
-          <a href="https://drive.google.com/file/d/1yCi_dJsbsmjfye-fBOBYK1sy9AF_Fnx6/view" target="_blank" rel="noopener" class="btn btn--outline-white btn--lg">📄 View Catalogue</a>
+          <button class="btn btn--accent btn--lg hero__cta-btn" id="heroQuoteBtn">
+            <span>Get a Free Quote</span>
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="https://wa.me/919891648612" target="_blank" rel="noopener" class="btn btn--outline-white btn--lg hero__cta-btn">
+            <span>💬 WhatsApp Us</span>
+          </a>
         </div>
-        <div class="hero__categories">
-          <a href="products" class="hero__cat-chip">✏️ Stationery</a>
-          <a href="products" class="hero__cat-chip">🧹 Housekeeping</a>
-          <a href="products" class="hero__cat-chip">☕ Pantry</a>
-          <a href="products" class="hero__cat-chip">🖨️ Cartridges</a>
-          <a href="products" class="hero__cat-chip">🥤 Disposables</a>
-          <a href="products" class="hero__cat-chip">🏆 Corporate Gifts</a>
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <span class="hero__trust-icon">✓</span> Same-Day Delivery
+          </div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-icon">✓</span> GST Invoices
+          </div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-icon">✓</span> 5000+ Products
+          </div>
         </div>
       </div>
-      <div class="hero__panel">
-        <div class="hero__stats-grid">
-          <div class="hero__stat-card">
-            <strong>8000+</strong>
-            <span>Products</span>
+      <div class="hero__right">
+        <div class="hero__card-stack">
+          <div class="hero__float-card hero__float-card--main">
+            <div class="hero__float-card-header">
+              <span class="hero__float-card-icon">📦</span>
+              <span>What We Supply</span>
+            </div>
+            <div class="hero__cat-grid">
+              <a href="products" class="hero__cat-chip">✏️ Stationery</a>
+              <a href="products" class="hero__cat-chip">🧹 Housekeeping</a>
+              <a href="products" class="hero__cat-chip">☕ Pantry</a>
+              <a href="products" class="hero__cat-chip">🖨️ Cartridges</a>
+              <a href="products" class="hero__cat-chip">🥤 Disposables</a>
+              <a href="products" class="hero__cat-chip">🏆 Corporate Gifts</a>
+            </div>
           </div>
-          <div class="hero__stat-card">
-            <strong>220+</strong>
-            <span>Clients</span>
+          <div class="hero__float-card hero__float-card--stat">
+            <span class="hero__mini-stat-icon">⚡</span>
+            <div>
+              <strong>Same-Day</strong>
+              <small>Delivery Available</small>
+            </div>
           </div>
-          <div class="hero__stat-card">
-            <strong>15+</strong>
-            <span>Years Exp.</span>
+          <div class="hero__float-card hero__float-card--review">
+            <div class="hero__mini-stars">★★★★★</div>
+            <p>&ldquo;Everything from one place &mdash; on time, every time.&rdquo;</p>
+            <span class="hero__mini-author">&mdash; Neha K., Gurugram</span>
           </div>
-          <div class="hero__stat-card">
-            <strong>350+</strong>
-            <span>MSME Clients</span>
+          <div class="hero__float-card hero__float-card--contact">
+            <span>📞</span>
+            <a href="tel:9891648612">9891648612</a>
+            <small>Samar &middot; Mon&ndash;Sat</small>
           </div>
-        </div>
-        <div class="hero__contact-bar">
-          <span>📞 Call Now: <a href="tel:9891648612">9891648612</a></span>
-          <span>Mon&ndash;Sat, 10 AM &ndash; 7 PM &middot; Samar</span>
-          <span aria-hidden="true">📦</span>
         </div>
       </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-arrow"></div>
     </div>
   </section>
 
@@ -110,9 +135,9 @@
   <section class="categories" id="categories">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Our Product Categories</h2>
-        <p class="section-subtitle">One partner for every office need &mdash; stationery to housekeeping, pantry to corporate gifts.</p>
-        <a href="products" class="btn btn--outline btn--sm">View All Products &rarr;</a>
+        <h2 class="section-title">What We Supply</h2>
+        <p class="section-subtitle">Complete workplace solutions &mdash; one partner, multiple categories, simplified procurement.</p>
+        <a href="products" class="btn btn--outline btn--sm">Explore All Products &rarr;</a>
       </div>
       <div class="categories__grid">
         <!-- Card 1: Stationery -->
@@ -189,9 +214,9 @@
   <section class="advantages" id="advantages">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">WHY CHOOSE US</span>
-        <h2 class="section-title">The Prime Facility Supplies Advantage</h2>
-        <p class="section-subtitle">Modern offices trust us for quality, speed and complete office supply convenience.</p>
+        <span class="section-label">OUR STRENGTHS</span>
+        <h2 class="section-title">Why Growing Businesses Choose Us</h2>
+        <p class="section-subtitle">Fast, reliable, personal, and cost-effective &mdash; the agile alternative to traditional suppliers.</p>
       </div>
       <div class="advantages__grid">
         <div class="adv-card">
@@ -230,9 +255,14 @@
           <p class="adv-card__desc">Direct manufacturer relationships mean better pricing and bulk discounts.</p>
         </div>
         <div class="adv-card">
-          <span class="adv-card__icon">🤝</span>
-          <h3 class="adv-card__title">15+ Years Trusted</h3>
-          <p class="adv-card__desc">350+ MSME and corporate clients trust us with their monthly supply needs.</p>
+          <span class="adv-card__icon">🚀</span>
+          <h3 class="adv-card__title">Agile & Responsive</h3>
+          <p class="adv-card__desc">Quick decision-making, personal attention, and problem-solving at your fingertips every day.</p>
+        </div>
+        <div class="adv-card">
+          <span class="adv-card__icon">✅</span>
+          <h3 class="adv-card__title">Quality Guaranteed</h3>
+          <p class="adv-card__desc">Verified suppliers, authentic products, GST-compliant invoices, and full transparency.</p>
         </div>
       </div>
     </div>
@@ -243,20 +273,20 @@
     <div class="container">
       <div class="stats__grid">
         <div class="stat-item">
-          <span class="stat-item__number" data-target="8000">0</span><span class="stat-item__plus">+</span>
-          <span class="stat-item__label">PRODUCTS AVAILABLE</span>
+          <span class="stat-item__number" data-target="5000">0</span><span class="stat-item__plus">+</span>
+          <span class="stat-item__label">PRODUCTS IN CATALOG</span>
         </div>
         <div class="stat-item">
-          <span class="stat-item__number" data-target="350">0</span><span class="stat-item__plus">+</span>
-          <span class="stat-item__label">REGISTERED CLIENTS</span>
+          <span class="stat-item__number" data-target="6">0</span><span class="stat-item__plus"></span>
+          <span class="stat-item__label">CITIES IN DELHI NCR</span>
         </div>
         <div class="stat-item">
-          <span class="stat-item__number" data-target="15">0</span><span class="stat-item__plus">+</span>
-          <span class="stat-item__label">YEARS OF EXPERIENCE</span>
+          <span class="stat-item__number" data-target="100">0</span><span class="stat-item__plus">%</span>
+          <span class="stat-item__label">DELIVERY ON TIME</span>
         </div>
         <div class="stat-item">
-          <span class="stat-item__number" data-target="250">0</span><span class="stat-item__plus">+</span>
-          <span class="stat-item__label">MSME / SME CLIENTS</span>
+          <span class="stat-item__number" data-target="24">0</span><span class="stat-item__plus">/7</span>
+          <span class="stat-item__label">RESPONSIVE SUPPORT</span>
         </div>
       </div>
     </div>
@@ -266,30 +296,38 @@
   <section class="how-it-works" id="how-it-works">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">HOW IT WORKS</span>
-        <h2 class="section-title">Simple 4-Step Process</h2>
-        <p class="section-subtitle">From first enquiry to delivery &mdash; quick, transparent and reliable.</p>
+        <span class="section-label">OUR PROCESS</span>
+        <h2 class="section-title">Get Supplies in 4 Simple Steps</h2>
+        <p class="section-subtitle">From call to doorstep &mdash; transparent, quick, and hassle-free.</p>
       </div>
       <div class="steps__grid">
         <div class="step-card">
           <div class="step-card__number">1</div>
-          <h4 class="step-card__title">Share Requirements</h4>
-          <p class="step-card__desc">Call, WhatsApp or fill our form. Tell us what you need &mdash; we respond same day.</p>
+          <div class="step-card__content">
+            <h4 class="step-card__title">Contact Us</h4>
+            <p class="step-card__desc">Call, WhatsApp, or fill our form. We respond within 2 hours, every day.</p>
+          </div>
         </div>
         <div class="step-card">
           <div class="step-card__number">2</div>
-          <h4 class="step-card__title">Receive a Quote</h4>
-          <p class="step-card__desc">Detailed, competitive price list customized for your office requirements.</p>
+          <div class="step-card__content">
+            <h4 class="step-card__title">Get a Customized Quote</h4>
+            <p class="step-card__desc">Competitive pricing tailored to your actual needs. Transparent breakdown provided.</p>
+          </div>
         </div>
         <div class="step-card">
           <div class="step-card__number">3</div>
-          <h4 class="step-card__title">Confirm Order</h4>
-          <p class="step-card__desc">Approve the quote and we process your order immediately &mdash; no delays.</p>
+          <div class="step-card__content">
+            <h4 class="step-card__title">Confirm & Order</h4>
+            <p class="step-card__desc">Approve the quote and we process immediately. No delays, no red tape.</p>
+          </div>
         </div>
         <div class="step-card">
           <div class="step-card__number">4</div>
-          <h4 class="step-card__title">Fast Delivery</h4>
-          <p class="step-card__desc">Products delivered on time with GST invoice and quality guarantee.</p>
+          <div class="step-card__content">
+            <h4 class="step-card__title">Receive & Verify</h4>
+            <p class="step-card__desc">Same-day or next-day delivery with GST invoice. Products exactly as promised.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -329,34 +367,34 @@
       <div class="reviews__grid">
         <div class="review-card">
           <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-card__text">&ldquo;Prime Facility Supplies has been our go-to supplier for 3 years. Reliable delivery, excellent range, very competitive pricing. Highly recommended!&rdquo;</p>
+          <p class="review-card__text">&ldquo;We were juggling 4 different vendors for office supplies before we found Prime Facility Supplies. Now everything comes from one place &mdash; on time, every time. Samar personally ensures nothing is missed.&rdquo;</p>
           <div class="review-card__author">
-            <div class="review-card__avatar">R</div>
+            <div class="review-card__avatar">N</div>
             <div>
-              <strong>Rahul Mehta</strong>
-              <span>Admin Manager, Tech Co., Gurugram</span>
+              <strong>Neha Kapoor</strong>
+              <span>Office Manager, Digital Agency, Gurugram</span>
             </div>
           </div>
         </div>
         <div class="review-card">
           <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-card__text">&ldquo;We switched all procurement to Prime Facility Supplies. One vendor, one invoice, everything on time. Amazing service &mdash; couldn&rsquo;t be happier!&rdquo;</p>
+          <p class="review-card__text">&ldquo;What impressed us most is their same-day delivery. We placed an urgent order for pantry and housekeeping items at 11 AM and everything was at our door by 4 PM. Reliable and well-priced.&rdquo;</p>
           <div class="review-card__author">
-            <div class="review-card__avatar">P</div>
+            <div class="review-card__avatar">D</div>
             <div>
-              <strong>Priya Sharma</strong>
-              <span>Office Head, Manufacturing, Noida</span>
+              <strong>Deepak Rana</strong>
+              <span>Admin Head, Co-working Space, Noida</span>
             </div>
           </div>
         </div>
         <div class="review-card">
           <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-card__text">&ldquo;Vikas sir is very responsive and professional. Monthly orders always fulfilled on time without any follow-ups. Best in Delhi NCR!&rdquo;</p>
+          <p class="review-card__text">&ldquo;Getting proper GST invoices was always a headache with our old supplier. PFS provides clean, compliant invoices with every order. Great for our accounting team.&rdquo;</p>
           <div class="review-card__author">
-            <div class="review-card__avatar">A</div>
+            <div class="review-card__avatar">S</div>
             <div>
-              <strong>Ankit Jain</strong>
-              <span>Purchase Manager, MSME, Delhi</span>
+              <strong>Sunita Mehta</strong>
+              <span>Finance Lead, Healthcare Startup, Delhi</span>
             </div>
           </div>
         </div>
@@ -379,7 +417,7 @@
               <span class="faq-item__toggle">+</span>
             </button>
             <div class="faq-item__answer">
-              <p>We supply 8000+ office essentials including stationery, housekeeping, pantry, disposables, printer cartridges, packaging and corporate gifts.</p>
+              <p>We supply 5000+ office essentials including stationery, housekeeping, pantry, disposables, printer cartridges, packaging and corporate gifts.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -418,6 +456,33 @@
               <p>We deliver across Delhi NCR including Delhi, Gurugram, Noida, Faridabad, and Ghaziabad. Same-day and next-day delivery available.</p>
             </div>
           </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              What is the minimum order value?
+              <span class="faq-item__toggle">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>There is no strict minimum order value. However, for free delivery within Delhi NCR, we recommend a minimum order of &#8377;1,000. Smaller orders can be arranged with nominal delivery charges.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              How quickly can you deliver?
+              <span class="faq-item__toggle">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>We offer same-day delivery for orders placed before 12 PM and next-day delivery for all other orders within Delhi NCR. Urgent orders are handled on priority.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              What payment methods do you accept?
+              <span class="faq-item__toggle">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>We accept bank transfers (NEFT/RTGS/IMPS), UPI, cheques, and cash on delivery. Credit terms are available for regular corporate clients after initial orders.</p>
+            </div>
+          </div>
         </div>
         <div class="faq__contact">
           <h4>Speak to Us Directly</h4>
@@ -436,12 +501,11 @@
   <!-- ====== CTA SECTION ====== -->
   <section class="cta" id="cta">
     <div class="container">
-      <h2 class="cta__title">Ready to Simplify Your Office Procurement?</h2>
-      <p class="cta__subtitle">Join 350+ businesses across Delhi NCR who trust Prime Facility Supplies.</p>
+      <h2 class="cta__title">Ready to Streamline Your Office Procurement?</h2>
+      <p class="cta__subtitle">Join growing businesses across Delhi NCR who've simplified their supply chain.</p>
       <div class="cta__buttons">
-        <button class="btn btn--primary btn--lg" id="ctaQuoteBtn">Get a Free Quote</button>
-        <a href="https://drive.google.com/file/d/1yCi_dJsbsmjfye-fBOBYK1sy9AF_Fnx6/view" target="_blank" rel="noopener" class="btn btn--outline-white btn--lg">Download Catalogue</a>
-        <a href="https://wa.me/919891648612" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">💬 WhatsApp Us</a>
+        <button class="btn btn--primary btn--lg" id="ctaQuoteBtn">Get a Free Quote Today</button>
+        <a href="https://wa.me/919891648612" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">💬 WhatsApp: Quick Response</a>
       </div>
     </div>
   </section>
@@ -458,12 +522,12 @@
               <small>Your Office Supply Partner</small>
             </span>
           </div>
-          <p>Delhi NCR's trusted office supply partner. 8000+ products, 15+ years of service, 350+ satisfied businesses.</p>
+          <p>Delhi NCR's agile office supply partner. Fast delivery, competitive pricing, personal service, and transparent partnerships with growing businesses.</p>
         </div>
         <div class="footer__links">
           <h5>QUICK LINKS</h5>
           <ul>
-            <li><a href="index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="services">Our Services</a></li>
             <li><a href="products">Product Catalogue</a></li>
             <li><a href="about">About Us</a></li>
